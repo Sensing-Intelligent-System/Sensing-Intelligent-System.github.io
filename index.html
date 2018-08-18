@@ -51,6 +51,7 @@
                                     <li><a href="#home">Home</a></li>
                                     <li><a href="#course">Course</a></li>
                                     <li><a href="#schedule">Schedule</a></li>
+                                    <li><a href="#faq">Q &amp; A</a></li>
                                     <li><a href="#contact">Contact</a></li>
                                     <!-- <li><a href="#">Pages</a>
                                         <ul class="dropdown">
@@ -478,6 +479,88 @@
     </div>
     <!-- ##### Top Popular Courses Area End ##### -->
 
+
+    <!-- ##### Q&A Area Start ##### -->
+    <div class="testimonials-area section-padding-100-0 bg-dark bg-overlay" id="faq">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-heading mx-auto text-center white wow fadeInUp" data-wow-delay="100ms" >
+                        <h3>Q &amp; A</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- Single Q&A Area -->
+                <div class="col-12 col-md-12">
+                    <div class="single-testimonial-area mb-100 d-flex wow fadeInUp" data-wow-delay="200ms">f
+                        <div class="testimonial-content">
+                            <button class="collapsible-btn">Q1: Is this course English mediated?</button>
+                            <div class="content">
+                                <p>Ans: Officially no, but all written materials, slides, exams will be in English.</p>
+                            </div>
+
+                            <button class="collapsible-btn">Q2: I don’t have much experience about building/developing robots, should I enroll in the class?</button>
+                            <div class="content">
+                                <p>Ans: Yes, you are welcome to join the class. We will cover the most-needed technical skills, and real robot platforms will be provided.</p>
+                            </div>
+
+                            <button class="collapsible-btn">Q3: Is this course teaching oriented or research oriented?</button>
+                            <div class="content">
+                                <p>Ans: First of all, a quick self evaluation: how many research papers you have read/write? Do you know problem formulation? Have you designed an experiment with a hypothesis? If you don’t know much about those, you come to the right class. We wish to make this course a transition from teaching to research. We will still cover fundamental materials in the first half, with hands-on materials from MIT 2.12. In the 2nd half it will be project based and research oriented.</p>
+                            </div>
+
+                            <button class="collapsible-btn">Q4: Why hands-on materials?</button>
+                            <div class="content">
+                                <p>Ans: The goal of the class is to let you build an AI-powered mobile manipulator. I believe watching a robot you build in action is the most rewarded moment, and is the best way to motivate students.</p>
+                            </div>
+
+                            <button class="collapsible-btn">Q5: Why should we have a final exam?</button>
+                            <div class="content">
+                                <p>Ans: The goal of the class is to let you build an AI-powered mobile manipulator. I believe watching a robot you build in action is the most rewarded moment, and is the best way to motivate students.</p>
+                            </div>
+
+                            <button class="collapsible-btn">Q6: Why hands-on materials?</button>
+                            <div class="content">
+                                <p>Ans: This course is one of the qualifying exam subjects in the PhD program of the Electrical and Control Engineering. I believe the current topics about deep learning and Intelligent robots, as well as how to read paper are must-know for any graduate student.</p>
+                            </div>
+
+                            <button class="collapsible-btn">Q7: Why ROS</button>
+                            <div class="content">
+                                <p>Ans: It’s the most commonly used middleware in robotics. You will be able to control lots of robots existing on earth. You can just learn it in our tutorial covered in this class, or learn it via our Duckietown course (hope you and your friends have joined our AI Driving introductory course).</p>
+                            </div>
+
+                            <button class="collapsible-btn">Q8  : What deep learning frameworks are used in the class and why?</button>
+                            <div class="content">
+                                <p>Ans: We will cover Caffe/Caffe2 and PyTorch. We want to run deep learning on embedded computer, which is a good reason to use Caffe/Caffe2. PyTorch is popular for all areas in machine learning, such as vision, NLP, and RL; we love Python. We will use onnx to convert the models. We also wish you could train your own models on GPU workstations.</p>
+                            </div>
+
+                            
+                            <script>
+                                var coll = document.getElementsByClassName("collapsible-btn");
+                                var i;
+
+                                for (i = 0; i < coll.length; i++) {
+                                  coll[i].addEventListener("click", function() {
+                                    this.classList.toggle("collapsible_active");
+                                    var content = this.nextElementSibling;
+                                    if (content.style.maxHeight){
+                                      content.style.maxHeight = null;
+                                    } else {
+                                      content.style.maxHeight = content.scrollHeight + "px";
+                                    } 
+                                  });
+                                }
+                            </script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- ##### Top Popular Courses Area End ##### -->
     <!-- ##### Partner Area Start ##### -->
     <!-- <div class="partner-area section-padding-0-100">
         <div class="container">
