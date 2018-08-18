@@ -50,7 +50,7 @@ ol {
   margin: 0; }
   ul li,
   ol li {
-    list-style: none; }
+    list-style-type: decimal; }
 
 img {
   height: auto;
@@ -670,6 +670,45 @@ img {
     border-color: #007ac4; }
   .single-testimonial-area:hover .testimonial-content h5 {
     color: #007ac4; }
+
+  /*coolcat 20180818*/
+    .single-testimonial-area .collapsible-btn {
+    background-color: rgba(0,0,0,1);
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+
+    -webkit-transition-duration: 500ms;
+    transition-duration: 500ms;
+    font-weight: 500;
+    font-size: 20px; 
+    }
+
+    .single-testimonial-area .collapsible-active, .collapsible-btn:hover {
+        background-color: #555;
+        color: #007ac4;
+    }
+
+    .single-testimonial-area .collapsible-btn:after {
+        content: '\002B';
+        
+        font-weight: bold;
+        float: right;
+        margin-left: 5px;
+    }
+
+    .single-testimonial-area .content {
+        padding: 0 18px;
+        padding-left: 5%;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+        
+    }
   @media only screen and (max-width: 767px) {
     .single-testimonial-area .testimonial-content h5 {
     -webkit-transition-duration: 500ms;
@@ -680,7 +719,7 @@ img {
     font-size: 18px; }
   .single-testimonial-area .testimonial-content p, li {
     font-size: 14px; /* coolcat 20180814 */
-    color: #ffffff; }
+    color: #ffffff; }    
   }
 
 /* Top Popular Course Area CSS */
