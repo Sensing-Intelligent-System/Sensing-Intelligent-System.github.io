@@ -1313,7 +1313,6 @@ img {
 
 /* Schedule Section 20180816 coolcat*/
 .schedule {
-  background: url(../img/schedule-bg.jpg);
   background-size: cover;
   background-attachment: fixed;
   margin-left: auto; 
